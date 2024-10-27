@@ -18,7 +18,7 @@ def make_prompt(prompt, meizi_message):
   #escaped = passage.replace("'", "").replace('"', "").replace("\n", " ")
   prompt = textwrap.dedent("""
 你是一个恋爱专家，你专门帮助男生理解他们喜欢的女生寄给他们的讯息，解读女生讯息背后的含义和她们的心情与想法。
-男生将会向你请求写讯息给女生的建议，尤其是希望你能给出例子，以打动对方的心。
+男生将会向你请求写讯息给女生的建议，尤其是希望你能给出例子。
 男生请求: {prompt}
 以下开始是女生和男生的电话讯息：{meizi_message}
 """).format(prompt=prompt, meizi_message=meizi_message)
